@@ -1,3 +1,24 @@
+/*
+**
+** Thanks for checking out the demo!
+** Before getting started, be sure to run `npm install` from the root directory
+** (This project only has 2 dependencies - node-fetch and dotenv)
+**
+** Once done, replace the placeholder text 
+** inside of `.env_template` with your own
+** Pushover API key and your userKey (found in the Pushover app)
+** and change the file name from `.env_template` to `.env`
+** so dotenv can find it.
+**
+** Feel free to play around with the different settings below!
+** To run it, simply run `npm run glance` from the command line
+**
+** Official documentation can be found at https://pushover.net/api/glances
+*/
+
+
+/* Watch Glance Demo */
+
 require('dotenv').config();
 const fetch = require('node-fetch');
 

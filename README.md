@@ -26,9 +26,10 @@ This is a brief demo of the Pushover App and its capabilities. The Pushover app 
 - [ ] Send a `POST` request to `https://api.pushover.net/1/messages.json`
 - [ ] In the body of your request, include the required parameters found on [Pushover's API Page](https://pushover.net/api)
 
-### Demos ###
+## Demos ##
 - [Push Notifications](./pushNotification.js)
 - [Glances](./glances.js)
+- Or [Clone](https://github.com/SonicRift/PushoverDemo.git) the entire repo to check it out for yourself
 ***
 ### Example 1 - Push Notification ###
 
