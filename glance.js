@@ -5,7 +5,7 @@ const data = {
     token: process.env.PO_KEY, // Fill this out in .env_template
     user: process.env.USER_KEY, // Don't forget to change the name from .env_template to .env
     title: 'Averaging 8:54', // Line 1
-    text: 'Rolling 5 day: 48:12', // Line 2
+    text: 'Backup 1 of 8 done', // Line 2
     subtext: 'Worked 8:24 today', // Line 3
     count: 48, // Dial inner number
     percent: 82.5 // Dial outer gauge

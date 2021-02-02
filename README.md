@@ -1,13 +1,24 @@
 # Pushover Demo #
-***
+
 ### Using the Pushover App to send notifications ###
 This is a brief demo of the Pushover App and its capabilities. The Pushover app can generate both push notifications and update your Apple Watch face if you have one.
 
 >Requirements:
 > - Pushover Application
-> - Pushover License ($5 one time)
+> - Pushover License ($5 one time - covers all your devices)
 > - Basic understanding of HTTP requests
 > - Information that you want to send, of course!
+
+## Overview: Why use Pushover? ##
+- It's a great way to stay up to date
+  - It can be irritating to remember to go back and check on a project. with Pushover, you can simply walk away and it will notify you when it's done
+- It's affordable at only $5 one time for licenses
+  - A personal use license is only $5 and allows you full access on all of your devices (iPad, iPhone, Android device or tablet, smart watch, etc.)
+- It lets you see status updates right from your wrist
+  - With built-in glance support, you can view status updates on your Apple Watch
+- It's reliable
+  - I've been using Pushover for well over a year and have yet to run into a service interruption. Their support team is great and available for any questions you may have
+
 
 ### Getting Started ###
 - [ ] Setup your [Pushover Account](https://pushover.net)
