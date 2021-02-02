@@ -12,8 +12,10 @@ This is a brief demo of the Pushover App and its capabilities. The Pushover app 
 ## Overview: Why use Pushover? ##
 - It's a great way to stay up to date
   - It can be irritating to remember to go back and check on a project. with Pushover, you can simply walk away and it will notify you when it's done
+  - If you have something that's generating periodic updates, you no longer have to keep going back to check the log
 - It's affordable at only $5 one time for licenses
   - A personal use license is only $5 and allows you full access on all of your devices (iPad, iPhone, Android device or tablet, smart watch, etc.)
+  - You can send 7,500 push notifications or watch glance updates per month on the free plan (after the $5 license)
 - It lets you see status updates right from your wrist
   - With built-in glance support, you can view status updates on your Apple Watch
 - It's reliable
