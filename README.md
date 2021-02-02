@@ -25,6 +25,10 @@ This is a brief demo of the Pushover App and its capabilities. The Pushover app 
 - [ ] Create and store your API key
 - [ ] Send a `POST` request to `https://api.pushover.net/1/messages.json`
 - [ ] In the body of your request, include the required parameters found on [Pushover's API Page](https://pushover.net/api)
+
+### Demos ###
+- [Push Notifications](./pushNotification.js)
+- [Glances](./glances.js)
 ***
 ### Example 1 - Push Notification ###
 
@@ -79,7 +83,8 @@ fetch(url, {
 - If you're using a watch complication that has only 1 line, the line shown will be whatever is assigned the `text` property
 - Some complications show either a dial or a gauge - the `count` parameter controls the number displayed, and the `percent` controls the outder dial
   - Count takes an `integer` (passing in a `float` will not throw error, however _the count will simply not update._ This is a common source of bugs)
-  - Percent takes an `integer` or `float` between 0 and 100
+  - Percent takes an `integer` or `float` between 0 and 100 (inclusive)
+
 
 ### Important: ###
 Because of how the Apple Watch manages battery, **_be sure to rate limit your updates to the watch._** A good rule of thumb is no more than once per 20 minutes. If you exceed this limit, the Apple Watch will 'blacklist' your app, and will stop displaying updates until the limit is reset at midnight each day.
