@@ -14,7 +14,6 @@ This is a brief demo of the Pushover App and its capabilities. The Pushover app 
 - [ ] Create and store your API key
 - [ ] Send a `POST` request to `https://api.pushover.net/1/messages.json`
 - [ ] In the body of your request, include the required parameters found on [Pushover's API Page](https://pushover.net/api)
-
 ***
 ### Example 1 - Push Notification ###
 
@@ -35,6 +34,10 @@ fetch(url, {
     .catch(err => console.log(err)) // {"status":0 "request":"7903bd1b-6aa2-43e6-9c1c-bb5ccea848f1", "errors":[ "application token is invalid" ]}
 ```
 >`token`, `user`, `title`, and `message` are required, but there are many other options you can use. Try setting `{ html: 1 }` or `{ monospace: 1 }` for some additional options!
+
+| Normal | HTML | Monospaced |
+|:----:|:----:|:----:|
+|!['Standard'](./assets/PushStandard.jpg "Standard") |!['HTML'](./assets/PushHTML.jpg "HTML") |!['Monospaced'](./assets/PushMonospace.jpg "Monospaced") | 
 ***
 
 ### Example 2 - Watch Glance Update ###
@@ -60,3 +63,19 @@ fetch(url, {
     .catch(err => console.log(err)) // {"status":0 "request":"7903bd1b-6aa2-43e6-9c1c-bb5ccea848f1", "errors":[ "application token is invalid" ]}
 ```
 
+#### Glance Tips and Tricks
+- The watch fields are slightly misleading. If you use a multi-line watch complication, you will see all three lines in the order `title`, `text`, `subtext` (see the screenshot below)
+- If you're using a watch complication that has only 1 line, the line shown will be whatever is assigned the `text` property
+- Some complications show either a dial or a gauge - the `count` parameter controls the number displayed, and the `percent` controls the outder dial
+  - Count takes an `integer` (passing in a `float` will not throw error, however _the count will simply not update._ This is a common source of bugs)
+  - Percent takes an `integer` or `float` between 0 and 100
+
+### Important: ###
+Because of how the Apple Watch manages battery, **_be sure to rate limit your updates to the watch._** A good rule of thumb is no more than once per 20 minutes. If you exceed this limit, the Apple Watch will 'blacklist' your app, and will stop displaying updates until the limit is reset at midnight each day.
+| Screenshot 1 | Screenshot 2 |
+|:---:|:---:|
+| !['Watch1'](./assets/Watch1.PNG) | !['Watch2'](./assets/Watch2.PNG) |
+***
+
+!['Watch Fields'](./assets/WatchDetails.png)
+***

@@ -1,0 +1,25 @@
+{
+  "name": "pushoverdemo",
+  "version": "1.0.0",
+  "description": "Demonstration for Pushover integration",
+  "main": "pushoverDemo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "node pushNotification.js",
+    "glance": "node glance.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonicRift/PushoverDemo.git"
+  },
+  "author": "Shane Sutro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SonicRift/PushoverDemo/issues"
+  },
+  "homepage": "https://github.com/SonicRift/PushoverDemo#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
+  }
+}
