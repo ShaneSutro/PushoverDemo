@@ -34,7 +34,7 @@ const colorful = {
     user: process.env.USER_KEY, // Don't forget to change the name from .env_template to .env
     html: 1,
     title: 'Backup Complete!',
-    message: `Backup of database <i>"transaction_history"</i> was completed at <font color="#02b6ed">${new Date()-1000}</font>`
+    message: `Backup of database <i>"transaction_history"</i> was completed at <font color="#02b6ed">${new Date()}</font>`
 }
 
 const mono = {
